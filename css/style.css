@@ -1,0 +1,578 @@
+a{
+   text-decoration: none;
+   color: inherit; 
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #0a0a0a;
+}
+
+.header{
+    background-color: #0a0a0a;
+    padding: 33px 0 32px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #717171;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.phone{
+    flex-grow: 1;
+    flex-basis: 0;  
+    text-align: right;
+    font-size: 24px;
+    line-height: 29px;
+}
+.menu-item{
+    padding-right: 30px;
+}
+.headline{
+    background-color: #F5F5F7;
+    text-align: center;
+    padding: 70px 0 40px;
+
+}
+.title{
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    color: #490E84;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+
+}
+.headline-img{
+    margin-bottom: 25px;
+
+}
+.headline-btn{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #490E84;
+    padding: 22px 117px 19px;
+    border-radius: 30px;
+
+}
+
+.new{
+  padding: 90px 0 150px;  
+}
+
+.new-title,
+.color-title{
+   margin: 0 0 50px; 
+   text-transform: uppercase;
+   text-align: center;
+   color: #717171;
+   font-size: 32px;
+   line-height: 39px;
+   font-weight: 700;
+
+}
+
+.new-info{
+  display: flex;  
+  align-items: center;
+}
+.new-text p{
+    max-width: 560px;
+    margin: 0 0 30px;
+}
+.new-text b{
+ max-width: 560px;  
+ font-size: 20px; 
+ line-height: 26px;
+ display: block;
+}
+.images-new{
+    margin-left: 190px;
+}
+
+.color{
+    padding-bottom: 150px;
+}
+
+.color-list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.color-item img{
+    margin-bottom: 20px;
+}
+
+.contacts-inner{
+    display: flex;
+    background-color: #574B63;
+    color: #fff;
+}
+
+.contacts-form{
+    width: 100%;
+    padding: 140px 93px;
+    text-align: center;
+}
+
+.contacts-title{
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 39px;
+    text-align-last: left;
+}
+
+.contacts-input{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #574B63;
+}
+
+.contacts-input::placeholder{
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    opacity: .5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
+
+}
+
+.contacts-form p{
+    opacity: 0.5;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contacts-form button{
+    border: none;
+    text-transform: uppercase;
+    color: #490E84;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 16px 81px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #0A0A0A;
+}
+
+.footer-link{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.footer-inner{
+    color: #717171;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+@media (max-width: 1200px){
+    .headline-img{
+        max-width: 100%;
+    }
+    .contacts-inner{
+        display: block;
+    }
+    .contacts-form{
+        width: auto;
+    }
+    .contacts-title{
+        text-align: center;
+    }
+    .contacts-img{
+        width: 100%;
+    }
+    .contacts{
+        background-color: #574B63;
+    }
+
+}
+
+@media (max-width: 1100px){
+    .color-list{
+        flex-wrap: wrap;
+    }
+    .color-item{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .logo-img, .phone, .footer-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 941px) {
+    .menu-btn {
+        display: none; /* Скрываем бургер-меню на экранах шире 940px */
+    }
+
+    /* Отображение горизонтального меню вместо бургер-меню */
+    .menu {
+        transform: translateY(0); /* Обеспечиваем, что меню отображается по умолчанию */
+        position: static; /* Сбрасываем абсолютное позиционирование */
+        flex-direction: row; /* Элементы меню в строку */
+        background-color: transparent; /* Убираем фоновый цвет */
+        align-items: center; /* Центрируем элементы меню по вертикали */
+        justify-content: flex-start; /* Расположение элементов меню с начала контейнера */
+    }
+
+    /* Возвращаем стили пунктов меню к стандартному горизонтальному виду */
+    .menu-item {
+        padding: 0 20px; /* Добавляем отступы между пунктами меню */
+    }
+
+    /* Убираем медиа-стили кнопок, если они были определены для мобильной версии */
+    .headline-btn, .contacts-form button {
+        padding: 10px 30px; /* Пример изменения отступов кнопок */
+    }
+
+    /* Возвращаем стандартные стили для заголовков */
+    .title, .new-title, .color-title, .contacts-title {
+        font-size: 48px; /* Пример изменения размера шрифта для заголовков */
+        line-height: 56px; /* Пример изменения межстрочного интервала */
+    }
+
+    /* Сбрасываем мобильные стили для изображений, если они были изменены */
+    .headline-img, .images-new, .contacts-img {
+        max-width: none; /* Убираем ограничения по максимальной ширине */
+    }
+
+    .footer-link{
+        margin-left: 50px;
+    }
+
+    .logo-img{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-right: 85px;  /* Отрицательный отступ для компенсации */
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .contacts-img {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+   
+       }
+
+    /* Аналогично можно скорректировать другие элементы в соответствии с дизайном для экранов больше 940px */
+}
+
+
+@media (max-width: 940px){
+    .menu-btn{
+        display: inline;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        order: 1;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 50;
+    }
+    .logo,
+    .phone{
+        position: relative;
+        z-index: 50;
+    }
+
+    .btn-line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 2px;
+        transition: .3s ease;
+    }
+
+    .btn-line:nth-child(1){
+        top: 0;
+    }
+    .btn-line:nth-child(2){
+        top: 20px;
+    }
+    .btn-line:nth-child(3){
+        top: 20px;
+    }
+    .btn-line:nth-child(4){
+        top: 40px;
+    }
+
+    .menu-open .btn-line:nth-child(1){
+        transform: scaleX(0);
+    }
+    .menu-open .btn-line:nth-child(2){
+        transform: rotate(45deg);
+    }
+    .menu-open .btn-line:nth-child(3){
+        transform: rotate(-45deg);
+    }
+    .menu-open .btn-line:nth-child(4){
+        transform: scaleX(0);
+    }
+
+    .menu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #0A0A0A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: .3s ease;
+
+    }
+    .menu-open .menu{
+        transform: translateY(0%);
+
+    }
+
+    .menu-item{
+        padding: 50px 0;
+        font-size: 56px;
+    }
+
+    .images-new{
+       display: none; 
+    }
+    .new-text p,
+    .new-text b {
+        max-width: 100%;
+        
+    }
+    .phone{
+        text-align: center;
+    }
+
+    .footer-link{
+        margin-left: 50px;
+    }
+
+    .logo-img{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-right: 85px;  /* Отрицательный отступ для компенсации */
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .contacts-img {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+   
+       }
+}
+
+@media (max-width: 768px){
+    .headline,
+    .new{
+        padding: 50px 0;
+    }
+    .color{
+        padding: 50px;
+    }
+    .contacts-form{
+        padding: 50px 70px;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .footer-link{
+        margin-left: 50px;
+    }
+
+    .logo-img{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-right: 85px;  /* Отрицательный отступ для компенсации */
+    }
+    
+
+    .contacts-img {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+   
+       }
+}
+
+@media (max-width: 640px){
+    .footer-inner{
+        padding: 20px 0;
+        flex-direction: column;
+    }
+    .footer-inner .logo{
+        margin: 15px 0;
+    }
+    
+}
+
+@media (max-width: 560px){
+    .title{
+       font-size: 34px;
+        line-height: 42px;
+    }
+    .new-title, .color-title,
+    .contacts-title{
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .logo-img, .phone, .footer-link {
+        display: block;
+        width: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+
+    .headline-btn {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 90px 16px;
+       
+    }
+
+    .color-item,
+    .color-item img{
+        width: 100%;
+        
+    }
+    .contacts-form{
+        padding: 50px 30px;
+    }
+
+    .contacts-img {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+   
+       }
+    
+}
+
+@media (max-width: 420px) {
+    /* Центрирование логотипа и номера телефона */
+    .logo, .phone, .footer-link {
+        display: block;
+        width: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .container{
+        padding: 0;
+    }
+
+    /* Центрирование меню и изменение его структуры для удобного отображения */
+    .nav {
+        width: 100%;
+        display: block;
+    }
+
+    .menu-btn {
+        position: absolute;
+        right: 10px; /* Смещение кнопки меню вправо */
+        top: 10px; /* Смещение кнопки меню вверх */
+    }
+
+    .phone {
+        order: 1; /* Помещаем номер телефона выше логотипа */
+        margin-top: 20px; /* Небольшой отступ сверху для визуального разделения элементов */
+    }
+
+    .logo-img {
+        max-width: 100px; /* Можно ограничить размер логотипа, чтобы он не занимал слишком много места */
+        margin: 0 auto; /* Центрирование изображения логотипа */
+    }
+    .contacts-img {
+     width: 100%;
+     display: block;
+     height: auto;
+     margin: 0;
+     bottom: 0;
+     left: 0;
+
+    }
+}
+
+@media (max-width: 375px) {
+    /* Подтверждаем стили, заданные для 420px, так как 375px уже входит в этот диапазон */
+    .contacts-form {
+        padding: 50px 10px;
+    }
+}
